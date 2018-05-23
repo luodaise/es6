@@ -4,6 +4,7 @@ import liveserver from 'gulp-live-server';
 import args from './util/args';
 
 gulp.task('server',(cb)=>{
+
     if(!args.watch) return cb();
 
     var server = liveserver.new(['--harmony','server/bin/www']);
